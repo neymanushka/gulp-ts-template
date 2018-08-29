@@ -27,7 +27,7 @@ gulp.task('default', ['copyHtml'], function () {
     })
     .plugin(tsify)
     .transform('babelify', {
-        presets: ['es2015'],
+        presets: ['@babel/preset-env'],
         extensions: ['.ts']
     })
     .bundle()
